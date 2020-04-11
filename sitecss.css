@@ -1,0 +1,274 @@
+/********************************************************************  
+I declare that my assignment is wholly my own work in accordance with Seneca Academic Policy. 
+No part of this assignment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assignment for my use.  
+I also declare that no part of this assignment has been distributed to other students.  
+
+Name: Ilya Khleborodov
+Dated: Mar 21, 2020
+********************************************************************/ 
+ 
+
+/* BODY */
+body {
+	background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-repeat: repeat;
+	overflow: hidden;
+}
+a {
+	color: black;
+}
+
+/* FOOTER */
+footer {
+	font-family: Armata
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 0.3%;
+	height: 30px;
+	background-color: rgba(244,244,219,0.719);
+	border-radius: 10px;
+}
+
+/* ************ Web Site TITLE ***************** */
+
+/* Web Site NAME BOX */
+#title {
+    text-align: center;
+    background-color: rgba(244, 244, 219, 0.719);
+    border-radius: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    height: 109px;
+}
+
+/* Logo Image */
+#logoAndName {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Web Site LOGO */
+img.palmtree {
+    width: 100px;
+    height: auto;
+}
+
+/* Web Site NAME */
+#title span {
+    font-family: Pacifico;
+    font-size: 48pt;
+}
+
+/* ************ FEATURE PRODUCTS TITLE ***************** */
+.featuredProducts {
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.788);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    -moz-border-radius-topleft: 24px;
+    -moz-border-radius-topright: 24px;
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-top-right-radius: 24px;
+}
+
+.featuredProducts h2 {
+    font-family: Armata;
+    padding-top: 5px;
+    margin-bottom: 0%;
+}
+
+.featuredProducts span {
+    font-weight: bold;
+}
+
+/* *********** PRODUCTS CONTAINER **************************** */
+div.products-container {
+    background-color: rgba(240, 255, 255, 0.788);
+    padding: 0% 1%;
+    width: 98%;
+    height: 29em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 0.6%;
+    border-bottom-left-radius: 24px;
+    -moz-border-radius-bottomleft: 24px;
+    -webkit-border-bottom-left-radius: 24px;
+    
+}
+
+/* ********** INDIVIDUAL PRODUCTS ********************** */
+figure {
+    padding: 0px 10px;
+    height: 300px;
+    width: 200px;
+    background-color: rgba(240, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 6px inset black;
+    border-radius: 20px;
+    margin: 20px 30px;
+    float: left;
+    overflow: hidden;
+    transition: height .2s;
+}
+
+figure:hover {
+    padding: 0px 10px;
+    width: 200px;
+    background-color: rgb(140, 255, 255);
+    border: 6px inset rgb(114, 99, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 550px;
+    
+    cursor: pointer; /* change the mouser pointer to a hand */
+}
+
+.row1,.row2,.row3{
+    float:left;
+}
+
+figure:hover .row2 {
+    margin-top: -10%;
+}
+
+
+figure h2.productName {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ******* PRODUCT PRICE *************** */
+figure p.price {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* ******* PRODUCT IMAGE *************** */
+figure img {
+    margin: 0 auto;
+    width: 180px;
+    height: 140px;
+    border: 2px solid black;
+    display: block;
+}
+
+/* ******* PRODUCT DESCRIPTION *************** */
+
+
+p.forDetails {
+    font-family: Armata;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5pt;
+    /* margin: 0 auto; */
+}
+
+figcaption {
+    word-break: break-all;
+    text-align: justify;
+    margin: 5% 4% 0% 4%;
+    display: none;
+    font-family: cursive;
+    font-size: 11pt;
+}
+
+
+figure:hover p.forDetails {
+    display: none;
+}
+
+figure:hover figcaption {
+    display: block;
+}
+
+/* ***************** POPUP SECTION / INPUT ********************************* */
+#popupForm
+{
+display: none;
+position: fixed; /* absolute? fixed? they have different results... */
+top: 35%;
+left: 35%;
+background-color: white;
+padding: 40px;
+border: 1px solid black;
+border-radius: 10px;
+cursor: default;
+z-index: 1000;
+}
+
+.close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    font: bold 24px arial, sans-serif;
+    color: white;
+    background-color: rgb(54, 31, 255);
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#popupSubscribed
+{
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: default;
+    z-index: 1001;
+}
+
+#popupSubscribed img
+{
+    width: 400px;
+    height: auto;
+}
+
+#popupbg
+{
+    visibility: hidden;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+input[type="submit"]
+{
+    border-radius: 10px;
+}
+
+input[value="Get Discount Now"]
+{
+    font-size: 10pt;
+}
+
+/* ******* PERSONALIZED SCROLL BAR *************** */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

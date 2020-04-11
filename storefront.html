@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <title>Store Front</title>
+        <link rel='stylesheet' href='sitecss.css' type='text/css' media='screen'>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
+
+        <script>
+                /* Make the popupForm visible for the user */
+                function popUpON() {
+                        document.querySelector("#popupForm").style.display = "block";
+                        document.querySelector("#popupbg").style.visibility = "visible";
+                }
+
+                /* Close the popupForm or the popupSubscribed, also the popupbg */
+                function popUpOFF() {
+                        var popup = document.querySelector("#popupForm").style.display;
+                        var popupSubs = document.querySelector("#popupSubscribed").style.display;
+
+                        if (popup == "block") {
+                                document.querySelector("#popupForm").style.display = "none";
+                        }
+
+                        if (popupSubs == "block") {
+                                document.querySelector("#popupSubscribed").style.display = "none";
+                        }
+                        document.querySelector("#popupbg").style.visibility = "hidden";
+
+                }  
+        </script>
+</head>
+
+<body>
+
+        <div id="title">
+                <div class="storeName">
+                        <span>The Store Front</span>
+                </div>
+        </div>
+
+        <div class="featProducts">
+                <h2>- Featured Products -</h2>
+        </div>
+
+        <!-- Main container that hold all the products -->
+        <div class="products-container">
+
+				<!-- Row 1 -->
+                <div class="row1">
+                        <figure onclick="popUpON();" title="Click for more details">
+                                <h2 class="productName">Beach Bum Bike</h2>
+                                <hr>
+                                <p class="price">CAD 35.99</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41fd3QoEBHL.jpg"
+                                        alt="Beach_Bum_Bike.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        The Beach Bum Bike Caddy allows you to attach
+                                        almost any folding chair to your bike and ride
+                                        to the beach, concerts, sporting events,
+                                        you name it!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 11.7 x 3.5 x 3.5 inches ; 1.55 pounds.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="Click for more details">
+                                <h2 class="productName">Beach Tent</h2>
+                                <hr>
+                                <p class="price">CAD 89.99</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61dv4EG3E6L._SL1200_.jpg"
+                                        alt="Beach_Tent.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Super bluecoast beach umbrella outdoor,
+                                        sun shelter cabana, automatic pop-up, UPF 50+
+                                        sun shade, portable camping, Easy Setup!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 102 x 52 x 96 inches.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="Click for more details">
+                                <h2 class="productName">Beach Blanket</h2>
+                                <hr>
+                                <p class="price">CAD 37.95</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/816ltwWybvL._SL1500_.jpg"
+                                        alt="Beach_Blanket.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        The Multipurpose Outdoors Beach Blanket is the
+                                        perfect choice for spending your days outside,
+                                        whether you go to the beach, music festivals,
+                                        picnics or camping!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Weight: 1.9 pounds.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="Click for more details">
+                                <h2 class="productName">Wonder Wheeler</h2>
+                                <hr>
+                                <p class="price">CAD 62.19</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81DVCZ0EZDL._SL1500_.jpg"
+                                        alt="Wonder_Wheeler.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Carry up to 4 full-size beach chairs, incredibly
+                                        easy to pull, a side strap and pocket for carrying
+                                        an umbrella, Suitable for a family of 4!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 41 x 32 x 24.5 inches ; 18.8 pounds
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="Click for more details">
+                                <h2 class="productName">Smart Sock</h2>
+                                <hr>
+                                <p class="price">CAD 9.99 to 16.99</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71XkH5SF2UL._SL1500_.jpg"
+                                        alt="Smart_Sock.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Carry up to 4 full-size beach chairs, incredibly
+                                        easy to pull, a side strap and pocket for carrying
+                                        an umbrella, Suitable for a family of 4!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 41 x 32 x 24.5 inches ; 18.8 pounds
+                                </figcaption>
+                        </figure>
+                </div> <!-- Row 1 end-->
+
+                <!-- Row 2 -->
+                <div class="row2">
+
+                        <figure onclick="popUpON();" title="Click for more details">
+                                <h2 class="productName">Air Sofa</h2>
+                                <hr>
+                                <p class="price">CAD 30.99</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/81JxMinReEL._SL1500_.jpg"
+                                        alt="Air_Sofa.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Functional and full of perks, resistant high-quality
+                                        material, multi-purpose, easy to inflate. Off the
+                                        Grid Loungers are constructed with 210T Nylon Ripstop!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 6 x 6 x 14 inches, 2.2 pounds.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="CLICK TO GET SPECIAL OFFER">
+                                <h2 class="productName">Swim Goggles</h2>
+                                <hr>
+                                <p class="price">CAD 11.99</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71wffEOZw8L._SL1200_.jpg"
+                                        alt="Swim_Goggles.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Flexible silicone frame and improved nosepiece
+                                        provide extreme comfort, anti-fog coated by the
+                                        latest Environmental Treatment Technology, easy
+                                        to put goggles on!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 8.6 x 2.5 x 2.6 inches ; 5.6 ounces.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="CLICK TO GET SPECIAL OFFER">
+                                <h2 class="productName">Bikini Bag</h2>
+                                <hr>
+                                <p class="price">CAD 18.00</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/41Ae6lB5JGL.jpg"
+                                        alt="Bikini_Bag.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Your wet gym or swimsuits and dry clean clothes
+                                        will be perfectly separated and organized, pocket
+                                        for your small accessories, you can put your
+                                        cellphone or keys.
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Weight: 15 ounces.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="CLICK TO GET SPECIAL OFFER">
+                                <h2 class="productName">Mesh Ball Bag</h2>
+                                <hr>
+                                <p class="price">CAD 13.99</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Bw8Fiw-VL._SL1100_.jpg"
+                                        alt="Mesh_Ball_Bag.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        Durable mesh material, very popular applicable
+                                        for stocking indoor or outdoor bulky items to
+                                        holds for sports balls, pool inflatables,
+                                        soft toys and outdoor accessories!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 40 x 29.5 x 0.5 inches.
+                                </figcaption>
+                        </figure>
+
+                        <figure onclick="popUpON();" title="CLICK TO GET SPECIAL OFFER">
+                                <h2 class="productName">Sand-Water Toy</h2>
+                                <hr>
+                                <p class="price">CAD 13.49</p>
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/71Pfw42CW3L._SL1500_.jpg"
+                                        alt="Sand_and_Water_Toy.jpg">
+                                <p class="forDetails">Mouse on for details</p>
+                                <figcaption>
+                                        <b>Description:</b><br>
+                                        <!-- ************ 4 lines ******************* -->
+                                        An exciting sand or water funnel for outdoor play
+                                        Different layers funnel, tip, spin and sift.
+                                        Includes convenient carry handle.
+                                        Bright colors and sea-creature decorations add to the fun.!
+                                        <br><br>
+                                        <b>Details:</b><br>
+                                        <!-- **************************************** -->
+                                        Dimensions: 15 x 7 x 6 inches, 1.3 pounds.
+                                </figcaption>
+                        </figure>
+                </div> <!-- Row 2 end-->
+        </div> <!-- End main products container -->
+
+        <!-- background that do not allow the user to click in any other parts of the page if the popups are visible -->
+        <div id="popupbg"></div>
+
+        <footer>
+                <b>©2020</b> - <b>Ilya Khleborodov</b> -
+                <a href="../partA/ontario.html"><b>Click for PART A</b></a><br><br>
+        </footer>
+</body>
+
+</html>
