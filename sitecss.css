@@ -22,7 +22,8 @@ a {
 footer {
 	font-family: Armata
 	text-align: center;
-	padding-left: 1%;
+	margin-top: 10px;
+	margin-left: 20px;
 	height: 90px;
 	background-color: rgba(244,244,219,0.719);
 	border-radius: 30px;
