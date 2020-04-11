@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=3.0, minimum-scale=0.7">
+        <title>Reflection</title>
+        <!--<link rel='stylesheet' href='sitecss.css' type='text/css' media='screen'>-->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet'>
+</head>
+
+<body>
+
+	<header>
+		<div class="center">
+			<h2>
+			     Reflection
+			</h2>
+		</div>
+	</header>
+		
+	<section class="main center">
+	
+	<!-- Start your code here -->
+		<h3>The Concept of Responsive Design in Web Development</h3>
+		
+		<p>In web development, Responsive Design is a concept of developing web pages with expectation that the user can load the same page 
+		on different devices/operating systems that might have different resolutions. 
+		"Responsive", in this case, means that different devices/operating systems will automatically change size, height 
+		and width of images, text and other elements to properly fit the screen space. There are several ways a web page can be made "responsive".</p>
+		
+		<h4><b>Using HTML</b></h4>
+		<p>One way this can be done is via HTML, with the use of "viewport" meta tag, 
+		which is also what was used to improve UX for this particular page. "Viewport" refers to the screen space on the web page where the content is displayed. 
+		This tag can be customized to set specific rules in regards to scaling of the content, in particular, being able to automatically set the width of the page 
+		to the width of the screen that the web page being viewed on.</p>
+		
+		<p>However, "viewport" tag is not an "all-in-one" solution for responsive design. 
+		While the text resolution is usually handled well, where it doesn't get downscaled and become blurry, 
+		the images are almost always get simply downscaled, which can result in loss of details. 
+		One solution to mitigate this issue can involve importing the images with a higher pixel density. Thus, when the mobile device converts the page for mobile use by zooming in the page, 
+		the images will retain their intended viewing quality.</p>
+		
+		<p>Another solution, while being more robust but also tedious, involves simply using two different images. When the user loads the webpage on an average computer screen the browser loads 
+		the original image. However, should the user open the webpage on a smaller, mobile screen the browser will load an independent, smaller size image.</p>
+		
+		<h4><b>Using CSS</b></h4>
+		<p>"Responsive" design can also be done via CSS, which has several tags, in particular "width" and "max-width", that can specify how individual elements get scaled on the webpage. The advantage
+		to using these CSS tags is that they can be applied to individual page elements, meaning the developer can specify exactly which elements should be scaled precisely and which should be left
+		"as-is", for example, images.</p>
+		
+		<h4><b>Conclusion</b></h4>
+		<p>Responsive web design is an important concept that needs to be addressed when designing web pages. Nowadays, in the era of information, people almost always have access to multiple 
+		devices that have different operating systems, running different browsers at different resolutions. All those specifications need to be taken into account when designing a webpage and it can 
+		be essential for the developer to have a way to make the webpage be compatible with as many devices as possible, while also being able to do so as fast and efficiently as possible. Thus, having 
+		a way to automate certain compatibilities is vital for the developer's productivity, considering how quickly new devices/systems enter the market.</p>
+	
+	<!-- End your code here  -->
+	
+	</section>
+	
+        <footer>
+                <b>©2020</b> - <b>Ilya Khleborodov</b>
+				<p></p>
+                <a href="https://ikhleborodov.github.io"><b>Click to view Store Front on GitHub</b></a><br><br>
+				<a href="https://ikhleborodov.github.io/reflection.html"><b>Click to view reflection on GitHub</b></a><br><br>
+        </footer>
+</body>
+
+</html>
