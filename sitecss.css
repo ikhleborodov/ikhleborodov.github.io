@@ -55,6 +55,7 @@ img.palmtree {
 
 /* Web Site NAME */
 #title span {
+    max-width: 100%;
     font-family: Pacifico;
     font-size: 48pt;
 }
